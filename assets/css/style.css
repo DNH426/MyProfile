@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+#project{
+    background-color: black;
+    color: white;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+}
+
+.layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #000000;
+    
+}
+
+#goal{
+    font-size: 14px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #DB0202;
+
+    padding: 0; 
+}
+
+.layer img {
+    position: absolute;
+    font-size: 8px;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+    font-size: 2em;
+}
+
+.bottom {
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+.bottom .content-body {
+    right: 5%;
+}
+
+.bottom h1 {
+    color: #000000;
+}
+
+.top {
+    background: #000000;
+    z-index: 2;
+    width: 50vw;
+}
+
+.top .content-body {
+    left: 5%;
+    color: #FFFFFF;
+}
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #FD0000;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+.jumbotron {
+    background-color: rgb(0, 0, 0);
+    color: #FFFFFF;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #000000;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.42857143;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #FF0000;
+    background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000000;
+}
